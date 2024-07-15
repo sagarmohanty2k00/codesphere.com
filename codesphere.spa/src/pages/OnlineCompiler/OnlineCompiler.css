@@ -1,0 +1,17 @@
+.online-compiler {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.compiler-header {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.compiler-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
