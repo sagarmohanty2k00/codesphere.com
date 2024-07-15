@@ -15,7 +15,7 @@ const CodeEditor = ({ language }) => {
     };
 
     return (
-        <div className="code-editor-container">
+        <div className="code-editor-container flex-lg-row flex-column flex-md-column">
             <div className="code-editor">
                 <div className="editor-header">
                     <div className="file-tab">main.{language === 'python' ? 'py' : 'txt'}</div>

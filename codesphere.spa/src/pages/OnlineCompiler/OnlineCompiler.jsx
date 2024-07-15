@@ -7,9 +7,9 @@ const OnlineCompiler = () => {
     const { language } = useParams();
 
     return (
-        <div className="online-compiler">
+        <div className="online-compiler d-flex flex-column">
             <header className="compiler-header">
-                <h1>{language.charAt(0).toUpperCase() + language.slice(1)} Online Compiler</h1>
+                <h1>{language.charAt(0).toUpperCase() + language.slice(1)} Online Compiler - By CodeSphere 💙</h1>
             </header>
             <CodeEditor language={language} />
         </div>

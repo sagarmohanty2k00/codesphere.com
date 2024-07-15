@@ -1,0 +1,118 @@
+.l-navbar {
+  height: 100vh;
+  background-color: #2d2d2d; /* Sidebar background color */
+  transition: all 0.3s ease;
+  /* z-index: 1000; Ensure sidebar overlays other content */
+}
+
+.collapsed {
+  width: 60px; /* Collapsed width with icons only */
+}
+.expanded {
+  width: 240px;
+}
+
+.nav {
+  padding-top: 1rem;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  justify-content: center; /* Center the logo when collapsed */
+}
+
+.nav_logo-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav_logo-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.nav_list {
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav_link:hover,
+.nav_link.active {
+  background-color: #546e7a; /* Active/hover background color */
+  color: #fff;
+}
+
+.nav_icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav_name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.nav_logo {
+  width: 30px;
+  margin: auto;
+  padding: 0;
+}
+
+.header_toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header_toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header_toggle:focus {
+  outline: none;
+}
+
+/* Hide text in collapsed mode */
+.nav_logo-name.hide,
+.nav_name.hide {
+  display: none;
+}
+
+/* Show text in expanded mode */
+.nav_logo-name.show,
+.nav_name.show {
+  display: inline;
+}
+
+.nav-toggle-button {
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 0 0 10px;
+}
+.nav-toggle-text {
+  color: #fff;
+}
